@@ -1,6 +1,6 @@
 <?php
 
-interface Unitary
+interface UnitaryInterface
 {
     public function execute();
 }

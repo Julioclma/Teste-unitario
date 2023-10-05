@@ -1,6 +1,6 @@
 <?php
 
-class DiscountCalculatorTest implements Unitary
+class DiscountCalculatorTest implements UnitaryInterface
 {
     public function ShouldAplly_WhenValueIsAboveTheMinimum()
     {
