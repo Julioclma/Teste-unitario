@@ -8,7 +8,7 @@ class DiscountCalculator
 
     public function aplly($value)
     {
-        if($value > self::MINIMUM_VALUE){
+        if ($value > self::MINIMUM_VALUE) {
             return $value - self::DISCOUNT_VALUE;
         }
 
