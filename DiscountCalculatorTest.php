@@ -4,11 +4,14 @@ class DiscountCalculatorTest implements UnitaryInterface
 {
     public function ShouldAplly_WhenValueIsAboveTheMinimum()
     {
+        //PREPARAÇÃO (INSTANCIA A CLASSE ALVO DE TESTE)
         $discountCalculator = new DiscountCalculator;
 
+        //EXECUTAÇÃO (EXECUTA O MÉTODO DE TESTE)
         $totalValue = 130;
         $totalWithDiscount = $discountCalculator->aplly($totalValue);
 
+        //VERIFICA SE VALOR BATE COM O ESPERADO
         $expectedValue = 110;
         $this->assertEquals($expectedValue, $totalWithDiscount);
     }
